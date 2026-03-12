@@ -10,12 +10,10 @@ public class Invoice {
         items = new ArrayList<>();
     }
 
-    // Add a line item to the invoice
     public void addItem(LineItem item) {
         items.add(item);
     }
 
-    // Loop through all items and sum up their subtotals
     public double getTotal() {
         double total = 0;
         for (LineItem item : items) {
